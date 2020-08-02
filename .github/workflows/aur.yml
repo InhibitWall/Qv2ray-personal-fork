@@ -8,8 +8,6 @@ on:
       - dev
     tags:
       - 'v**'
-  schedule:
-    - cron: "0 19 * * *"
 
 jobs:
   check_commit_msg:
