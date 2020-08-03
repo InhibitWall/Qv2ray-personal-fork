@@ -346,6 +346,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     for (const auto &plugin : pluginUserInfoWidgetsInfos)
     {
         plugin->FetchUserInfo();
+        userInfoLayout->addWidget(plugin);
         if (!isUserInfoGot)
         {
             userInfoLayout->removeWidget(userInfoBrowser);
@@ -369,7 +370,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
         }
         ConnectionManager->SetSubscriptionData(id, std::nullopt, Json["sublink"].toString(), 1.00);
         ConnectionManager->UpdateSubscription(id);
-        userInfoLayout->addWidget(plugin);
     }
 }
 

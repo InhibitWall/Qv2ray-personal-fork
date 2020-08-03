@@ -185,6 +185,8 @@ add_definitions(-D_QV2RAY_BUILD_EXTRA_INFO_STR_="${_QV2RAY_BUILD_EXTRA_INFO_STR_
 message("Qv2ray build info: ${_QV2RAY_BUILD_INFO_STR_}")
 message("Qv2ray build info ex: ${_QV2RAY_BUILD_EXTRA_INFO_STR_}")
 
+add_subdirectory(config config)
+
 
 # ==================================================================================
 # Plugin Interface Headers

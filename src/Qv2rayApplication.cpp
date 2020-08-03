@@ -248,13 +248,13 @@ namespace Qv2ray
         if (useManualConfigPath)
         {
             LOG(MODULE_INIT, "Using config path from env: " + manualConfigPath)
-            configFilePaths << manualConfigPath;
+            //configFilePaths << manualConfigPath;
         }
         else
         {
             configFilePaths << currentPathConfig;
-            configFilePaths << configQv2ray;
-            configFilePaths << homeQv2ray;
+            //configFilePaths << configQv2ray;
+            //configFilePaths << homeQv2ray;
         }
         QString configPath = "";
         bool hasExistingConfig = false;
